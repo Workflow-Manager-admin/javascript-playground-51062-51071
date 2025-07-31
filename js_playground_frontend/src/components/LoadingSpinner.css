@@ -1,0 +1,69 @@
+/* Custom loading spinner styles to complement Bootstrap */
+
+/* Override Bootstrap spinner colors to match our theme */
+.spinner-border.text-primary {
+  color: var(--bs-primary) !important;
+  border-color: currentColor;
+  border-right-color: transparent;
+}
+
+/* Custom loading container for better spacing */
+.loading-container {
+  min-height: 200px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 0.5rem;
+}
+
+/* Enhanced loading message styling */
+.loading-message {
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+}
+
+/* Animation for loading text */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.loading-message {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .spinner-border {
+    width: 2rem !important;
+    height: 2rem !important;
+  }
+  
+  .loading-message {
+    font-size: 0.75rem;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .spinner-border.text-primary {
+    border-color: #000;
+    border-right-color: transparent;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .spinner-border {
+    animation: none;
+  }
+  
+  .loading-message {
+    animation: none;
+  }
+}
+
+/* Focus styles for accessibility */
+.loading-container:focus {
+  outline: 2px solid var(--bs-primary);
+  outline-offset: 2px;
+}
