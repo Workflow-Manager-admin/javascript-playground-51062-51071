@@ -1,8 +1,11 @@
 {
-  "name": "react-kavia",
+  "name": "js-playground-frontend",
   "version": "0.1.0",
   "private": true,
+  "description": "Interactive JavaScript playground for writing, executing, and sharing code snippets",
   "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
+    "monaco-editor": "^0.52.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1"
@@ -30,5 +33,14 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3"
-  }
+  },
+  "keywords": [
+    "javascript",
+    "playground",
+    "code-editor",
+    "react",
+    "monaco-editor"
+  ],
+  "author": "Kavia",
+  "homepage": "."
 }
