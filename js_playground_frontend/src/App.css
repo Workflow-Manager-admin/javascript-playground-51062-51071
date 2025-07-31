@@ -1,5 +1,15 @@
-/* Global CSS Variables for the JavaScript Playground */
+/* Global CSS Variables for the JavaScript Playground with Bootstrap Integration */
 :root {
+  /* Override Bootstrap CSS variables with our color scheme */
+  --bs-primary: #282c34;
+  --bs-primary-rgb: 40, 44, 52;
+  --bs-secondary: #61dafb;
+  --bs-secondary-rgb: 97, 218, 251;
+  --bs-info: #61dafb;
+  --bs-info-rgb: 97, 218, 251;
+  --bs-warning: #f7df1e;
+  --bs-warning-rgb: 247, 223, 30;
+  
   /* Primary colors as specified in the work item */
   --primary-color: #282c34;
   --secondary-color: #61dafb;
